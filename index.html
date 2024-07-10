@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modeling Icon Show</title>
+    <style>
+      /* Reset styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+      }
+
+      main {
+        flex: 1;
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      section {
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 2rem;
+      }
+
+      p {
+        color: #666;
+        font-size: 1.2rem;
+        line-height: 1.8;
+      }
+
+      .instagramLink {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #4054b2;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+
+      .instagramLink:hover {
+        background-color: #324397;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        padding: 10px 0;
+        background-color: #333;
+        color: #fff;
+        width: 100%;
+      }
+
+      .intro-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+
+      .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+
+      .flex-container img {
+        width: 48%;
+        border-radius: 8px;
+      }
+
+      .flex-container .text-content {
+        width: 48%;
+      }
+
+      .instagram-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .instagram-container img {
+        width: 48%;
+        border-radius: 8px;
+      }
+
+      .instagram-container .text-content {
+        width: 48%;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .instagram-container h2 {
+        color: #4054b2;
+        margin-bottom: 10px;
+        font-size: 2rem;
+      }
+
+      .instagram-container p {
+        color: #666;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+
+      /* Custom styling for intro section */
+      #intro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .intro-content {
+        width: 48%;
+   
+      }
+
+      @media (max-width: 375px) {
+        .flex-container,
+        .instagram-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        p {
+          color: #3f3e3e;
+          font-size: .92rem;
+          line-height: 1.48;
+        }
+
+        .flex-container img,
+        .instagram-container img {
+          width: 100%;
+          margin-bottom: 10px; /* Adjust margin for spacing */
+          border-radius: 8px; /* Ensure consistent border radius */
+        }
+
+        .flex-container .text-content,
+        .instagram-container .text-content {
+          margin-bottom: 15px;
+          width: 100%;
+          padding: 0 10px; /* Adjust padding for better spacing */
+          text-align: justify; /* Justify text for better readability */
+        }
+        .instagram-container p {
+          color: #666;
+          font-size: 1rem;
+          line-height: 1.8;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="flex-container">
+        <img src="./img/main.png" alt="Model Registration" />
+        <div class="text-content">
+          <p>Welcome to the Mr Miss Mrs Teen & Kids Starface of India!</p>
+          <p>Join our Grand Finale Online Auditions happening now.</p>
+          <p>Exciting Prizes for Winners:</p>
+          <ul>
+            <li>₹1 Lac + Music Video</li>
+          </ul>
+          <p><strong>Judges:</strong> Prince Narula & Ruma Sharma</p>
+          <p><strong>Online Auditions Only</strong></p>
+          <p>
+            For inquiries or to register, please contact us at
+          
+         
+            To register using Instagram/Check out,
+            <a href="login.html">click here</a>.
+          </p>
+        </div>
+      </section>
+      <section class="instagram-container">
+        <div class="text-content">
+          <h2>Exclusive Registration</h2>
+          <p>
+            Join our prestigious Modeling Icon Show by registering through
+            Instagram. Gain exposure, connect with top industry professionals,
+            and showcase your talent to the world. Click below to check out!
+          </p>
+          <a href="login.html" class="instagramLink">Join via Instagram</a>
+        </div>
+        <img
+          src="./img/Screenshot 2024-07-10 at 15-25-46 Modeling Icon Show (@modelingiconshow) • Instagram photos and videos.png"
+          alt="Instagram Login"
+        />
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Modeling Icon Show. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
